@@ -16,6 +16,8 @@ export default class DisplayImageMasonry extends Component {
 
   
   render() {
+
+    console.log(this.props.data);
   
 
   const photos = this.props.data.map((image, key) => { 

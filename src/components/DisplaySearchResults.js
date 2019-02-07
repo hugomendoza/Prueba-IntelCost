@@ -76,6 +76,10 @@ export default class DisplaySearchResults extends Component {
 
                             <a target="_blank" rel="noopener noreferrer"  href={this.state.dataForModal.largeImageURL} download="pixabay-react" className="btn btn-primary mt-3">Download</a>
                         </h3>
+
+                        <a href={this.state.dataForModal.pageURL} target="_blank" rel="noopener noreferrer" className="m-3">
+                            More info on pixabay.com
+                        </a>
                     </Col>
                 </Row>
 
