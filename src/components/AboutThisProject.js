@@ -17,13 +17,13 @@ export default class AboutUs extends Component {
         I use Pixabay free API to fetch data and display image in list.<br /><br />
 
         Tags:<br />
-        <Link to="https://reactjs.org/" target="_blank">ReactJS</Link>  <br />
-        <Link to="https://www.npmjs.com/package/react-router" target="_blank">React Router</Link><br />
-        <Link to="https://reactstrap.github.io/" target="_blank">Reactstrap</Link><br />
-        <Link to="http://neptunian.github.io/react-photo-gallery/" target="_blank">React Photo Gallery</Link><br />
+        <a title="ReactJS" href="https://reactjs.org/" target="_blank">ReactJS</a>  <br />
+        <a title="React Router" href="https://www.npmjs.com/package/react-router" target="_blank">React Router</a><br />
+        <a title="Reactstrap" href="https://reactstrap.github.io/" target="_blank">Reactstrap</a><br />
+        <a title="React Photo Gallery" href="http://neptunian.github.io/react-photo-gallery/" target="_blank">React Photo Gallery</a><br />
         
         <br />
-        You can find source code on <a href="#!">github</a>
+        You can find source code on <a href="https://github.com/tibor-markucz/pixabay-reactjs" target="_blank" title="ReactJS - pixabay-com API">GITHUB</a>
         
     </Fade>
     )

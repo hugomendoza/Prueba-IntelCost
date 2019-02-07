@@ -6,31 +6,7 @@
 .pagination {
     justify-content: center !important;
  }
-/* 
-.imgWrapper {
-    padding: 0;
-    object-fit: cover;    
-    height: 350px;
-    overflow: hidden;
-    
-}
 
-.imgWrapper img {
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-}
-.imgWrapper .imageTitle {
-    position: absolute;
-    bottom: 0; left: 0; width: 100%;
-    background-color: rgba(0, 0, 0, .6);
-    color: #fff;
-    padding: 10px;
-}
-.imgWrapper .imageInfo i,
-.imgWrapper .imageInfo {
-    padding-right: 10px;
-} */
 .modalFull  {
     min-width: 100%;
     min-height: 100%;
@@ -67,4 +43,8 @@ html {
 
 .react-photo-gallery--gallery img { 
     border: 1px solid rgb(190, 190, 190);
+}
+
+.react-photo-gallery--gallery img:hover {
+    cursor: pointer;
 }
