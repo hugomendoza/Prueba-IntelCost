@@ -39,14 +39,9 @@ export default class DisplaySearch extends Component {
 
 
       nextPage() {
-        // console.log("nextPage");
-          /* Check if more page exists */
-          // console.log(this.state);
-
           if ( ( this.state.itemPerPage * this.state.data.pageNo ) > this.state.results.total) {
               return;
           }
-          
           
           let prevState = this.state.data;
           prevState.pageNo++;
@@ -57,7 +52,6 @@ export default class DisplaySearch extends Component {
       }
 
       prevPage() {
-          // console.log("prevPage");
           let prevState = this.state.data;          
           if (prevState.pageNo > 1) {
             prevState.pageNo--;
@@ -109,7 +103,6 @@ export default class DisplaySearch extends Component {
                 <DisplayPagination data={this.state} prevPage= {this.prevPage} nextPage={this.nextPage} />
               </div>
            }
-          
       </React.Fragment>
       
     )

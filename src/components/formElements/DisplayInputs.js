@@ -12,4 +12,4 @@ export default class DisplayInputs extends Component {
     )
   }
 }
-
+ 

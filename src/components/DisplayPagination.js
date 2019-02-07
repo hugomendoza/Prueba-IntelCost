@@ -33,3 +33,5 @@ export default class DisplayPagination extends Component {
     )
   }
 }
+
+

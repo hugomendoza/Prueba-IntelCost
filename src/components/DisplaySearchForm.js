@@ -4,10 +4,7 @@ import DisplaySelect from "./formElements/DisplaySelect";
 import DisplayButton from "./formElements/DisplayButton";
 import DisplayInlineError from "./formElements/DisplayInlineError";
 
-
 import { Row, Col, Form } from 'reactstrap';
-
-
 
 class DisplaySearchForm extends Component {
 
@@ -25,8 +22,6 @@ class DisplaySearchForm extends Component {
 
 
     onFormChange (e) {
-
-        console.log("onFormChange");
         let prevState = this.state.data;
         let targetName = e.target.name;
         let targetValue = e.target.value;
@@ -38,8 +33,6 @@ class DisplaySearchForm extends Component {
 
   
     onFormSubmit (e) {
-        console.warn("onFormSubmit");
-
         e.preventDefault();
         if (this.state.data.searchChanged) {
             this.props.searchData(this.state.data);
@@ -49,17 +42,10 @@ class DisplaySearchForm extends Component {
 
 
     render() {
-        // console.log("DisplaySerachFromPros start");
-        // console.log(this.props);
-        // console.log("DisplaySerachFromPros End");
-
-        
-
         return (
             <React.Fragment>
                 <h1 className="text-center pt-3">Search images on Pixabay</h1>
 
-                {/* form-inline */}
                 <Form onSubmit={this.onFormSubmit}  method="post" className="w-100  floatCenter mb-3">
                 <Row>
 

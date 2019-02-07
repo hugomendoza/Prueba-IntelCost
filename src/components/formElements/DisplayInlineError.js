@@ -8,4 +8,4 @@ export default class DisplayInlineError extends Component {
       </div>
     )
   }
-}
+} 

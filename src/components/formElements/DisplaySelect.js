@@ -19,4 +19,4 @@ export default class DisplaySelect extends Component {
       </React.Fragment>
     )
   }
-}
+} 

@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import { Row, Col, Media, Fade, Modal, ModalHeader, ModalBody, ModalFooter, ButtonGroup, Button} from "reactstrap";
 import { Link } from "react-router-dom";
-
 import DisplayImageMasonry from "./DisplayImageMasonry";
-
 
 export default class DisplaySearchResults extends Component {
     constructor(props){
@@ -116,7 +114,4 @@ export default class DisplaySearchResults extends Component {
         )
     }
 }
-
-
-
-  
+ 
