@@ -10,6 +10,7 @@ reactstrap
 It use free FontAwesome 5 icons, Bootstrap 4 Materia theme and Goggle fonts (Roboto and Leckerli One) all included in index.html file.
 
 For use of Pixabay API you need to request free API key from their wesite, and create file `.env` and include in the following format
+
 REACT_APP_PIXABAY_API_KEY   =   xxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxx
 
 
