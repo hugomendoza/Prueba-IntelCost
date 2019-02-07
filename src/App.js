@@ -1,26 +1,38 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {BrowserRouter, Switch, Route} from "react-router-dom";
+
 import './App.css';
+import {Container} from 'reactstrap';
+
+import NavComponent from "./components/NavComponent";
+import Footer from "./components/Footer";
+import AboutThisProject  from "./components/AboutThisProject";
+import DisplaySearch  from "./components/DisplaySearch";
+import Error404 from "./components/Error404";
+
+
+
+
+
 
 class App extends Component {
+
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <BrowserRouter>
+        <React.Fragment>
+          <NavComponent />
+            <Container fluid={true} >
+              <Switch>
+                        <Route exact component={AboutThisProject}   path="/about" />
+                        <Route exact component={DisplaySearch}      path="/" />
+                        <Route component={Error404}/>
+              </Switch>
+            </Container>
+          <Footer />
+        </React.Fragment>
+      </BrowserRouter>
     );
   }
 }
