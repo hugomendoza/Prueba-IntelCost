@@ -10,7 +10,7 @@ export default class DisplaySearch extends Component {
         super(props);
 
         this.state = {
-          apiKey              : process.env.REACT_APP_PIXABAY_API_KEY,
+          apiKey              : "13119377-fc7e10c6305a7de49da6ecb25",
           results             : {},
           displayLoader       : true,
           itemPerPage         : 24,

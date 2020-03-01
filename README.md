@@ -1,25 +1,3 @@
-This project is using ReactJS to fetch images from PIXABAY free API
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and the following modules are used:
-react-router
-react-router-dom
-react-photo-gallery
-reactstrap
-
-
-It use free FontAwesome 5 icons, Bootstrap 4 Materia theme and Goggle fonts (Roboto and Leckerli One) all included in index.html file.
-
-For use of Pixabay API you need to request free API key from their wesite, and create file `.env` and include in the following format
-
-REACT_APP_PIXABAY_API_KEY   =   xxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxx
-
-
-More about [Pixabay API](https://pixabay.com/api/docs/)
-
-
-
-
-
 ## Available Scripts
 
 In the project directory, you can run:

@@ -28,7 +28,7 @@ export default class DisplayImageMasonry extends Component {
       key : key,
       alt: image.tags + " : " + image.type,
       id : key
-     }
+    }
   });
 
 

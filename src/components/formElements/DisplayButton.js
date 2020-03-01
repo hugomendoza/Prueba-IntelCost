@@ -5,7 +5,7 @@ export default class DisplayButton extends Component {
   render() {
     return (
       <React.Fragment>
-        <Button color="primary" type={this.props.type} className={this.props.className}>{this.props.text}</Button>
+        <Button color="info" type={this.props.type} className={this.props.className}>{this.props.text}</Button>
       </React.Fragment>
     )
   }

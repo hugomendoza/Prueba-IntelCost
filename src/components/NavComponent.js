@@ -27,16 +27,8 @@ import {
       return (
         <div>
         <Navbar color="dark" expand="md">
-          <NavbarBrand href="/">PIXABAY-REACTJS</NavbarBrand>
+          <NavbarBrand href="/">Buscador de imagen</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/about">About</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
         </Navbar>
       </div>
       )

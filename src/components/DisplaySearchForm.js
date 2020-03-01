@@ -44,30 +44,21 @@ class DisplaySearchForm extends Component {
     render() {
         return (
             <React.Fragment>
-                <h1 className="text-center pt-3">Search images on Pixabay</h1>
+                <h1 className="text-center pt-3">Busca una imagen</h1>
 
                 <Form onSubmit={this.onFormSubmit}  method="post" className="w-100  floatCenter mb-3">
                 <Row>
 
                     <Col className="mb-2" sm="6" md="3" lg={{ size: 2, offset: 1 }} >
-                        <DisplayInputs name="searchString" onChange={this.onFormChange} labelText="Search for something" defaultValue={this.props.data.searchString}/>
+                        <DisplayInputs name="searchString" onChange={this.onFormChange} labelText="Busca una imagen" defaultValue={this.props.data.searchString}/>
                     </Col>
                     
                     <Col className="mb-2" sm="6" md="3" lg="2">
-                        <DisplaySelect name="searchImageCategory"  data={dataImageCategory}   defaultValue={this.props.data.searchImageCategory}      onChange={this.onFormChange} labelText="Image category" />
-                    </Col>
-
-                    <Col className="mb-2" sm="4" md="2" lg="2">
-                        <DisplaySelect name="searchImageType"     data={dataImageType}        defaultValue={this.props.data.searchImageType}      onChange={this.onFormChange} labelText="Image type" />
-                    </Col>
-                    
-
-                    <Col className="mb-2" sm="4" md="2" lg="2">
-                        <DisplaySelect name="searchImageOrder"     data={dataOrder}   defaultValue={this.props.data.searchImageOrder}      onChange={this.onFormChange} labelText="Order" />                        
+                        <DisplaySelect name="searchImageCategory"  data={dataImageCategory}   defaultValue={this.props.data.searchImageCategory}      onChange={this.onFormChange} labelText="Categoría" />
                     </Col>
                     
                     <Col className="my-auto" sm="4" md="2" lg="2">
-                        <DisplayButton name="submit" type="submit" text="Search" className="w-100" />                    
+                        <DisplayButton name="submit" type="submit" text="Buscar" className="w-100" />                    
                     </Col>
                 </Row>
                 </Form>

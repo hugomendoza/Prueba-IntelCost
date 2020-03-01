@@ -18,13 +18,13 @@ export default class DisplayPagination extends Component {
             <Pagination aria-label="pagination" className="floatCenter" size="lg">
                 <PaginationItem  { ...disablePrev }>
                     <PaginationLink previous href="#" onClick={this.props.prevPage} >
-                        <i className="fa fa-arrow-circle-left " /> Prev
+                        <i className="fa fa-arrow-circle-left " /> Anterior
                     </PaginationLink>
                 </PaginationItem>
 
                 <PaginationItem { ...disableNext }>
                     <PaginationLink next href="#" onClick={this.props.nextPage}>
-                        Next <i className="fa fa-arrow-circle-right " />
+                        Próximo <i className="fa fa-arrow-circle-right " />
                     </PaginationLink>
                 </PaginationItem>
             </Pagination>
